@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="inicio.html">
+                <i class="fas fa-code me-2"></i>CoderHub.run
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-title animate__animated animate__fadeInUp">
+                <h2>Servicios</h2>
+                <p>Ofrecemos soluciones tecnológicas completas para impulsar tu negocio hacia el futuro digital</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card service-card animate__animated animate__fadeInUp">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h4>Desarrollo Web</h4>
+                            <p class="card-text">Creamos sitios web modernos, responsivos y optimizados para SEO.
+                                Desde landing pages hasta aplicaciones web complejas con las últimas tecnologías.
+                            </p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>React, Vue.js, Angular</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Node.js, Python, PHP</li>
+                                <li><i class="fas fa-check text-success me-2"></i>E-commerce y CMS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card service-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Apps Móviles</h4>
+                            <p class="card-text">Desarrollamos aplicaciones móviles nativas e híbridas para iOS y
+                                Android. Experiencias fluidas y funcionalidades avanzadas.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>React Native, Flutter</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Swift, Kotlin</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Integración con APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card service-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Consultoría</h4>
+                            <p class="card-text">Asesoramos en la transformación digital de tu empresa. Análisis,
+                                estrategia y roadmaps tecnológicos personalizados.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Auditorías técnicas</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Arquitectura de software</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Estrategia digital</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card service-card animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4>Soporte</h4>
+                            <p class="card-text">Brindamos soporte técnico continuo y mantenimiento preventivo para
+                                que tus sistemas funcionen siempre de manera óptima.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Soporte 24/7</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Actualizaciones regulares</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Monitoreo y alertas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4><i class="fas fa-code me-2"></i>CoderHub.com</h4>
+                    <p class="mb-3">Transformamos ideas en soluciones digitales excepcionales. Somos tu aliado
+                        tecnológico para el futuro.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="inicio.html" class="text-light text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-light text-decoration-none">Nosotros</a>
+                        </li>
+                        <li class="mb-2"><a href="servicios.html" class="text-light text-decoration-none">Servicios</a>
+                        </li>
+                        <li class="mb-2"><a href="portafolio.html"
+                                class="text-light text-decoration-none">Portafolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Florencia, Caquetá, Colombia</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>+57 317 707 7854</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>coderhub1509@gmail.com</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 CoderHubcom. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

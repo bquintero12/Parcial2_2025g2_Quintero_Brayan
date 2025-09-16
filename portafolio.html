@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="inicio.html">
+                <i class="fas fa-code me-2"></i>CoderHub.run
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-title animate__animated animate__fadeInUp">
+                <h2>Portafolio</h2>
+                <p>Conoce algunos de los proyectos que hemos desarrollado con pasión y dedicación</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="portfolio-item animate__animated animate__fadeInUp">
+                        <div class="portfolio-img">
+                            <img src="https://th.bing.com/th/id/OIP.412dUltVnJFno268MugdDwHaFj?w=205&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="TechStart Platform" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>TechStart Platform</h4>
+                            <p>Plataforma web completa para startup de tecnología financiera. Desarrollada con React
+                                y Node.js, incluye dashboard administrativo y sistema de pagos.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">React</span>
+                                <span class="badge bg-light text-dark me-2">Node.js</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="portfolio-item animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="portfolio-img">
+                            <img src="https://th.bing.com/th/id/OIP.0n6sYd59SzWDmyHoeugjBAHaFc?w=234&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="EcoShop Mobile" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>EcoShop Mobile</h4>
+                            <p>Aplicación móvil de e-commerce especializada en productos ecológicos. Disponible para
+                                iOS y Android con integración de pagos y geolocalización.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">React Native</span>
+                                <span class="badge bg-light text-dark me-2">Firebase</span>
+                                <span class="badge bg-light text-dark">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="portfolio-item animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="portfolio-img">
+                                <img src="data:image/webp;base64,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" alt="HealthCare Dashboard" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>HealthCare Dashboard</h4>
+                            <p>Sistema de gestión hospitalaria con dashboard interactivo para médicos y
+                                administradores. Incluye gestión de pacientes, citas y reportes.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">Vue.js</span>
+                                <span class="badge bg-light text-dark me-2">Python</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="portfolio-item animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                        <div class="portfolio-img">
+                            <img src="https://th.bing.com/th/id/OIP.VJL2SPDEmfwt0hFJ0rxU1QHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Learning Hub" class="img-fluid">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Learning Hub</h4>
+                            <p>Plataforma educativa online con cursos interactivos, videoconferencias en vivo y
+                                sistema de evaluaciones automáticas para instituciones educativas.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">Angular</span>
+                                <span class="badge bg-light text-dark me-2">Java</span>
+                                <span class="badge bg-light text-dark">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="about-card">
+                        <div class="row text-center">
+                            <div class="col-md-3 mb-3">
+                                <h2 style="color: #667eea; font-size: 3rem; font-weight: 700;">100+</h2>
+                                <p>Proyectos Completados</p>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h2 style="color: #667eea; font-size: 3rem; font-weight: 700;">50+</h2>
+                                <p>Clientes Satisfechos</p>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h2 style="color: #667eea; font-size: 3rem; font-weight: 700;">3+</h2>
+                                <p>Años de Experiencia</p>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h2 style="color: #667eea; font-size: 3rem; font-weight: 700;">24/7</h2>
+                                <p>Soporte Técnico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4><i class="fas fa-code me-2"></i>CoderHub.com</h4>
+                    <p class="mb-3">Transformamos ideas en soluciones digitales excepcionales. Somos tu aliado
+                        tecnológico para el futuro.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="inicio.html" class="text-light text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-light text-decoration-none">Nosotros</a>
+                        </li>
+                        <li class="mb-2"><a href="servicios.html" class="text-light text-decoration-none">Servicios</a>
+                        </li>
+                        <li class="mb-2"><a href="portafolio.html"
+                                class="text-light text-decoration-none">Portafolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Florencia, Caquetá, Colombia</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i>+57 317 707 7854</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i>coderhub1509@gmail.com</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 CoderHubcom. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
